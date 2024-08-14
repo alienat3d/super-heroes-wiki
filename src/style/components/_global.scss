@@ -1,0 +1,20 @@
+body {
+	background-color: #0e1538;
+	color: #00ccff;
+}
+h1 {
+	font-family: 'Avengeance Heroic Avenger Bold', serif;
+	text-transform: uppercase;
+	font-size: 52px;
+	text-align: center;
+	letter-spacing: 13px;
+	text-shadow: 0 0 3px #FFF, 0 0 7px #FFF, 0 0 12px #FFF, 0 0 17px #00ccff, 0 0 10px #00ccff, 0 0 20px #00ccff, 0 0 35px #00ccff, 0 0 55px #00ccff;
+
+	span {
+		color: #d400d4;
+		text-shadow: 0 0 3px #FFF, 0 0 7px #FFF, 0 0 12px #FFF, 0 0 17px #d400d4, 0 0 10px #d400d4, 0 0 20px #d400d4, 0 0 35px #d400d4, 0 0 55px #d400d4;
+	}
+}
+.content__title{
+	margin: 5% 0;
+}
