@@ -1,0 +1,29 @@
+.footer {
+	padding: 15px 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.footer__link {
+	position: relative;
+	text-transform: capitalize;
+	font-size: 24px;
+	color: #fff;
+	text-decoration: none;
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: -3%;
+		bottom: 0;
+		width: 0;
+		height: 1px;
+		background: rgb(255,255,255);
+		background: linear-gradient(90deg, rgba(255,255,255,0.01) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.01) 100%);
+		transition: width .25s ease-out;
+	}
+
+	&:hover::after {
+		width: 106%;
+	}
+}
