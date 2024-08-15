@@ -1,5 +1,5 @@
 body {
-	font-family: 'Roboto', sans-serif;
+	@include font-reg;
   background-color: #0e1538;
   color: $color-lightblue;
 }
@@ -13,4 +13,3 @@ body > footer {
   position: sticky;
   top: 100vh;
 }
-
