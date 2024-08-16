@@ -1,4 +1,4 @@
-@keyframes color-corners {
+@keyframes color-corners-1 {
 	0%   {background: linear-gradient(45deg, #00ccff, #0e1538, #0e1538, #d400d4);}
 	5%   {background: linear-gradient(54deg, #00ccff, #0e1538, #0e1538, #d400d4);}
 	10%   {background: linear-gradient(63deg, #00ccff, #0e1538, #0e1538, #d400d4);}
@@ -19,4 +19,26 @@
 	89%   {background: linear-gradient(206deg, #00ccff, #0e1538, #0e1538, #d400d4);}
 	94%  {background: linear-gradient(215deg, #00ccff, #0e1538, #0e1538, #d400d4);}
 	100%  {background: linear-gradient(225deg, #00ccff, #0e1538, #0e1538, #d400d4);}
+}
+@keyframes color-corners-2 {
+	0%   {background: linear-gradient(45deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	5%   {background: linear-gradient(54deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	10%   {background: linear-gradient(63deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	15%   {background: linear-gradient(73deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	21%   {background: linear-gradient(82deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	26%   {background: linear-gradient(92deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	31%   {background: linear-gradient(101deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	36%   {background: linear-gradient(111deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	42%   {background: linear-gradient(120deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	47%   {background: linear-gradient(130deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	52%   {background: linear-gradient(139deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	57%   {background: linear-gradient(149deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	63%   {background: linear-gradient(158deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	68%   {background: linear-gradient(168deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	73%   {background: linear-gradient(177deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	78%   {background: linear-gradient(187deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	84%   {background: linear-gradient(196deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	89%   {background: linear-gradient(206deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	94%  {background: linear-gradient(215deg, #d400d4, #0e1538, #0e1538, #00ccff);}
+	100%  {background: linear-gradient(225deg, #d400d4, #0e1538, #0e1538, #00ccff);}
 }

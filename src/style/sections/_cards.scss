@@ -53,6 +53,7 @@ h1 {
   margin: 4% 0 7%;
 }
 .cards {
+	position: relative;
   margin-bottom: 5%;
   display: flex;
   flex-wrap: wrap;
@@ -67,91 +68,129 @@ h1 {
   line-height: 125%;
   background: $color-blue;
 
-  &::before {
-    content: '';
+  &::before,
+	&::after {
+		z-index: -1;
+		content: '';
     position: absolute;
     inset: -3px;
-    background: linear-gradient(
-      45deg,
-      $color-lightblue,
-      $color-blue,
-      $color-blue,
-      $color-pink
-    );
+	}
+  &::before {
     box-shadow: 0 0 0 20px #070c23;
-    z-index: -1;
   }
   &::after {
-    content: '';
-    position: absolute;
-    inset: -3px;
-    background: linear-gradient(
+    filter: blur(20px);
+  }
+	&.male::before,
+	&.male::after {
+		background: linear-gradient(
+      45deg,
+      $color-pink,
+      $color-blue,
+      $color-blue,
+      $color-lightblue
+    );
+	}
+	&.female::before,
+	&.female::after {
+		background: linear-gradient(
       45deg,
       $color-lightblue,
       $color-blue,
       $color-blue,
       $color-pink
     );
-    z-index: -1;
-    filter: blur(20px);
-  }
+	}
   &:hover .cards__card-info {
     opacity: 1;
   }
   &:hover::before,
   &:hover::after {
-    animation-name: color-corners;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-play-state: initial;
   }
+	&.male:hover::before,
+  &.male:hover::after {
+    animation-name: color-corners-2;
+	}
+	&.female:hover::before,
+  &.female:hover::after {
+    animation-name: color-corners-1;
+	}
 }
 .cards__card-title {
+  font-family: 'Avengeance Heroic Avenger Bold', serif;
+  letter-spacing: 3px;
+  font-size: 30px;
+  line-height: 1;
   margin: 0;
-  padding: 5px 0;
+  padding: 11px 0 9px;
   background-color: #070c23;
-  text-shadow: #e0e0e0 1px 1px 0;
+  // text-shadow: #e0e0e0 1px 1px 0;
+  /* 	text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 8px #fff,
+    0 0 12px $color-lightblue, 0 0 7px $color-lightblue,
+    0 0 13px $color-lightblue, 0 0 24px $color-lightblue,
+    0 0 37px $color-lightblue; */
 
-  &.female {
+  .cards__card.female & {
     color: $color-pink;
+    text-shadow: 0 0 1px #fff, 0 0 2.4px #fff, 0 0 4px #fff,
+      0 0 5.8px $color-pink, 0 0 3.4px $color-pink, 0 0 6.8px $color-pink,
+      0 0 11.9px $color-pink, 0 0 18.7px $color-pink;
   }
-  &.male {
+  .cards__card.male & {
     color: $color-lightblue;
+    text-shadow: 0 0 1px #fff, 0 0 2.4px #fff, 0 0 4px #fff,
+      0 0 5.8px $color-lightblue, 0 0 3.4px $color-lightblue,
+      0 0 6.8px $color-lightblue, 0 0 11.9px $color-lightblue,
+      0 0 18.7px $color-lightblue;
   }
 }
+
 .cards__card-pic {
-	height: 490px;
-	background: no-repeat center / cover;
+  height: 472px;
+  background: no-repeat center / cover;
+}
+.content__hint-message{
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	&::before {
+		contain: '';
+		width: 30px;
+		height: 30px;
+		background: transparent no-repeat center/contain;
+		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIiBkYXRhLW5hbWU9Ii0tQ2lyY2xlIi8+PHBhdGggZD0iTTEyIDEydjRNMTIgOGgwIi8+PC9nPjwvc3ZnPg==")
+	}
 }
 .cards__card-info {
   opacity: 0;
   position: absolute;
-  top: 32px;
+  top: 50px;
   left: 0;
   right: 0;
   bottom: 0;
-  display: flex;
+/*   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 15px;
+  justify-content: space-between; */
+  padding: 20px 15px;
   background-color: rgba(#fff, 0.7);
   color: $color-blue;
   transition: opacity 0.25s ease-in-out;
 }
-.cards__card-properties,
-.cards__card-properties-2 {
+.cards__card-properties {
+	margin-bottom: 15px;
   display: flex;
   align-items: center;
-}
-.cards__card-properties {
   justify-content: center;
   gap: 10px;
 }
-.cards__card-properties-2 {
+.cards__card-properties--2 {
   margin-top: 10px;
-  justify-content: space-around;
-  justify-content: space-evenly;
+	margin-bottom: 25px;
 }
 .cards__card-gender {
   margin-left: -10px;
@@ -159,10 +198,10 @@ h1 {
   height: 25px;
   background: no-repeat center/contain;
 
-  &.female {
+  .cards__card.female & {
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiBmaWxsPSIjZDQwMGQ0Ij4KICA8cGF0aCBkPSJNNTEyIDY0MGEyNTYgMjU2IDAgMSAwIDAtNTEyIDI1NiAyNTYgMCAwIDAgMCA1MTJ6bTAgNjRhMzIwIDMyMCAwIDEgMSAwLTY0MCAzMjAgMzIwIDAgMCAxIDAgNjQweiIvPgogIDxwYXRoIGQ9Ik01MTIgNjQwcTMyIDAgMzIgMzJ2MjU2cTAgMzItMzIgMzJ0LTMyLTMyVjY3MnEwLTMyIDMyLTMyeiIvPgogIDxwYXRoIGQ9Ik0zNTIgODAwaDMyMHEzMiAwIDMyIDMydC0zMiAzMkgzNTJxLTMyIDAtMzItMzJ0MzItMzJ6Ii8+Cjwvc3ZnPg==');
   }
-  &.male {
+  .cards__card.male & {
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiPgogIDxwYXRoIGZpbGw9IiMwMGNjZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE1IDNhMSAxIDAgMCAxIDEtMWg0YTIgMiAwIDAgMSAyIDJ2NGExIDEgMCAxIDEtMiAwVjUuNDFsLTQuNTMgNC41NC0uMTYuMTNhOCA4IDAgMSAxLTEuMzgtMS4zOCAxIDEgMCAwIDEgLjEyLS4xN0wxOC41OCA0SDE2YTEgMSAwIDAgMS0xLTFaTTkgMjFBNiA2IDAgMSAxIDkgOWE2IDYgMCAwIDEgMCAxMloiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPgo8L3N2Zz4=');
   }
 }
@@ -175,10 +214,10 @@ h1 {
   &.deceased {
     color: #000;
   }
-  .cards__card-gender.male + &.alive {
+  .cards__card.male &.alive {
     color: $color-lightblue;
   }
-  .cards__card-gender.female + &.alive {
+  .cards__card.female &.alive {
     color: $color-pink;
   }
 }
@@ -266,6 +305,7 @@ h1 {
   }
 }
 .cards__card-actors {
+	margin-bottom: 25px;
   position: relative;
   display: inline-flex;
   align-self: center;
