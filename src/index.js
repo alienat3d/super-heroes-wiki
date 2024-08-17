@@ -1,5 +1,6 @@
 import './style/index.scss';
+import device from "current-device";
 
-import { testFunc } from "./modules/test";
+import { hintForMobileFunc } from "./modules/hint-for-mobile";
 
-testFunc();
+hintForMobileFunc();

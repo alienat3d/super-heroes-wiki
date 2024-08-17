@@ -53,7 +53,7 @@ h1 {
   margin: 4% 0 7%;
 }
 .cards {
-	position: relative;
+  position: relative;
   margin-bottom: 5%;
   display: flex;
   flex-wrap: wrap;
@@ -69,38 +69,38 @@ h1 {
   background: $color-blue;
 
   &::before,
-	&::after {
-		z-index: -1;
-		content: '';
+  &::after {
+    z-index: -1;
+    content: '';
     position: absolute;
     inset: -3px;
-	}
+  }
   &::before {
     box-shadow: 0 0 0 20px #070c23;
   }
   &::after {
     filter: blur(20px);
   }
-	&.male::before,
-	&.male::after {
-		background: linear-gradient(
+  &.male::before,
+  &.male::after {
+    background: linear-gradient(
       45deg,
       $color-pink,
       $color-blue,
       $color-blue,
       $color-lightblue
     );
-	}
-	&.female::before,
-	&.female::after {
-		background: linear-gradient(
+  }
+  &.female::before,
+  &.female::after {
+    background: linear-gradient(
       45deg,
       $color-lightblue,
       $color-blue,
       $color-blue,
       $color-pink
     );
-	}
+  }
   &:hover .cards__card-info {
     opacity: 1;
   }
@@ -111,14 +111,14 @@ h1 {
     animation-direction: alternate;
     animation-play-state: initial;
   }
-	&.male:hover::before,
+  &.male:hover::before,
   &.male:hover::after {
     animation-name: color-corners-2;
-	}
-	&.female:hover::before,
+  }
+  &.female:hover::before,
   &.female:hover::after {
     animation-name: color-corners-1;
-	}
+  }
 }
 .cards__card-title {
   font-family: 'Avengeance Heroic Avenger Bold', serif;
@@ -153,18 +153,39 @@ h1 {
   height: 472px;
   background: no-repeat center / cover;
 }
-.content__hint-message{
-	position: absolute;
-	top: 0;
-	left: 0;
-	
-	&::before {
-		contain: '';
-		width: 30px;
-		height: 30px;
-		background: transparent no-repeat center/contain;
-		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIiBkYXRhLW5hbWU9Ii0tQ2lyY2xlIi8+PHBhdGggZD0iTTEyIDEydjRNMTIgOGgwIi8+PC9nPjwvc3ZnPg==")
-	}
+.content__hint-message {
+  display: none;
+  &.show {
+    display: block;
+    position: absolute;
+    box-shadow: 0 0 25px $color-lightblue;
+    border: 1px solid $color-lightblue;
+    border-radius: 15px;
+    padding: 18px 20px 20px 60px;
+    top: -10%;
+    left: 0;
+    font-size: 20px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      background: transparent no-repeat center/contain;
+    }
+    &::before {
+      width: 25px;
+      height: 25px;
+			left: 21px;
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwY2NmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIiBkYXRhLW5hbWU9Ii0tQ2lyY2xlIi8+PHBhdGggZD0iTTEyIDEydjRNMTIgOGgwIi8+PC9nPjwvc3ZnPg==');
+    }
+    &::after {
+      top: 50px;
+      left: 186px;
+      width: 40px;
+      height: 40px;
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMwMGNjZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE3LjUzIDEzLjk3YS43NS43NSAwIDAgMSAwIDEuMDZsLTUgNWEuNzUuNzUgMCAwIDEtMS4wNiAwbC01LTVhLjc1Ljc1IDAgMSAxIDEuMDYtMS4wNkwxMiAxOC40NGw0LjQ3LTQuNDdhLjc1Ljc1IDAgMCAxIDEuMDYgMFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxnIGZpbGw9IiMwMGNjZmYiIG9wYWNpdHk9Ii41Ij48cGF0aCBkPSJNMTIuNzUgOS41YzAtLjk1My0uMjgtMi4zNjctMS4xNDEtMy41NjNDMTAuNzE5IDQuNzAyIDkuMjQ0IDMuNzUgNyAzLjc1YS43NS43NSAwIDAgMCAwIDEuNWMxLjc1NiAwIDIuNzguNzE1IDMuMzkxIDEuNTYzLjYzOS44ODcuODU5IDEuOTc0Ljg1OSAyLjY4N3Y4LjE5bC43NS43NS43NS0uNzVWOS41Wk0xMi4xOTggMjAuMjI0WiIvPjwvZz48L3N2Zz4=');
+    }
+  }
 }
 .cards__card-info {
   opacity: 0;
@@ -173,7 +194,7 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
-/*   display: flex;
+  /*   display: flex;
   flex-direction: column;
   justify-content: space-between; */
   padding: 20px 15px;
@@ -182,7 +203,7 @@ h1 {
   transition: opacity 0.25s ease-in-out;
 }
 .cards__card-properties {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,7 +211,7 @@ h1 {
 }
 .cards__card-properties--2 {
   margin-top: 10px;
-	margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 .cards__card-gender {
   margin-left: -10px;
@@ -305,7 +326,7 @@ h1 {
   }
 }
 .cards__card-actors {
-	margin-bottom: 25px;
+  margin-bottom: 25px;
   position: relative;
   display: inline-flex;
   align-self: center;
