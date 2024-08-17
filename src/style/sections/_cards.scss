@@ -3,8 +3,9 @@ h1 {
   display: inline-block;
   font-family: 'Avengeance Heroic Avenger Bold', serif;
   text-transform: uppercase;
-  font-size: 52px;
-  letter-spacing: 13px;
+  font-size: 35px;
+	line-height: 170%;
+  letter-spacing: 9px;
   text-shadow: 0 0 3px #fff, 0 0 7px #fff, 0 0 12px #fff,
     0 0 17px $color-lightblue, 0 0 10px $color-lightblue,
     0 0 20px $color-lightblue, 0 0 35px $color-lightblue,
@@ -39,6 +40,11 @@ h1 {
   &::after {
     bottom: -22px;
   }
+
+	@media (min-width: 576px) {
+		font-size: 52px;
+		letter-spacing: 13px;
+	}
 }
 .content {
   text-align: center;
@@ -49,12 +55,17 @@ h1 {
   max-width: 1630px;
   // min-width: 320px;
 
-	@media (min-width: 640px) {
+	@media (min-width: 576px) {
 		padding: 0 15px;
 	}
 }
 .content__title {
-  margin: 4% 0 7%;
+  margin: 45px 0 77px;
+	z-index: 1;
+
+	@media (min-width: 576px) {
+		margin: 4% 0 7%;
+	}
 }
 .cards {
   position: relative;
@@ -66,7 +77,7 @@ h1 {
 }
 .cards__card {
   position: relative;
-  width: 250px;
+	width: 300px;
   height: 522px;
   font-size: 18px;
   line-height: 125%;
@@ -77,13 +88,13 @@ h1 {
     z-index: -1;
     content: '';
     position: absolute;
-    inset: -1px;
+    inset: -3px;
   }
   &::before {
-    box-shadow: 0 0 0 10px #070c23;
+    box-shadow: 0 0 0 20px #070c23;
   }
   &::after {
-    filter: blur(10px);
+    filter: blur(20px);
   }
   &.male::before,
   &.male::after {
@@ -123,21 +134,6 @@ h1 {
   &.female:hover::after {
     animation-name: color-corners-1;
   }
-
-  @media (min-width: 640px) {
-    width: 300px;
-
-    &::before,
-    &::after {
-      inset: -3px;
-    }
-    &::before {
-      box-shadow: 0 0 0 20px #070c23;
-    }
-    &::after {
-      filter: blur(20px);
-    }
-  }
 }
 .cards__card-title {
   font-family: 'Avengeance Heroic Avenger Bold', serif;
@@ -170,15 +166,17 @@ h1 {
 .content__hint-message {
   display: none;
   &.show {
+		z-index: 5;
     display: block;
     position: absolute;
     box-shadow: 0 0 25px $color-lightblue;
     border: 1px solid $color-lightblue;
     border-radius: 15px;
     padding: 18px 20px 20px 60px;
-    top: -10%;
-    left: 0;
+    top: -86px;
+    left: 66px;
     font-size: 20px;
+		background-color: $color-blue;
 
     &::before,
     &::after {
@@ -191,8 +189,8 @@ h1 {
       background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwY2NmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIiBkYXRhLW5hbWU9Ii0tQ2lyY2xlIi8+PHBhdGggZD0iTTEyIDEydjRNMTIgOGgwIi8+PC9nPjwvc3ZnPg==');
     }
     &::after {
-      top: 50px;
-      left: 186px;
+      top: 47px;
+      left: 188px;
       width: 40px;
       height: 40px;
       background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiMwMGNjZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE3LjUzIDEzLjk3YS43NS43NSAwIDAgMSAwIDEuMDZsLTUgNWEuNzUuNzUgMCAwIDEtMS4wNiAwbC01LTVhLjc1Ljc1IDAgMSAxIDEuMDYtMS4wNkwxMiAxOC40NGw0LjQ3LTQuNDdhLjc1Ljc1IDAgMCAxIDEuMDYgMFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxnIGZpbGw9IiMwMGNjZmYiIG9wYWNpdHk9Ii41Ij48cGF0aCBkPSJNMTIuNzUgOS41YzAtLjk1My0uMjgtMi4zNjctMS4xNDEtMy41NjNDMTAuNzE5IDQuNzAyIDkuMjQ0IDMuNzUgNyAzLjc1YS43NS43NSAwIDAgMCAwIDEuNWMxLjc1NiAwIDIuNzguNzE1IDMuMzkxIDEuNTYzLjYzOS44ODcuODU5IDEuOTc0Ljg1OSAyLjY4N3Y4LjE5bC43NS43NS43NS0uNzVWOS41Wk0xMi4xOTggMjAuMjI0WiIvPjwvZz48L3N2Zz4=');
@@ -206,13 +204,14 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
-  /*   display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
   padding: 20px 15px;
   background-color: rgba(#fff, 0.7);
   color: $color-blue;
   transition: opacity 0.25s ease-in-out;
+
+	&.show {
+		opacity: 1;
+	}
 }
 .cards__card-properties {
   margin-bottom: 15px;

@@ -7,7 +7,7 @@ export const hintForMobileFunc = () => {
 
 	const htmlTag = document.querySelector('html');
 	
-	if (htmlTag.classList.contains('desktop')) {
+	if (!htmlTag.classList.contains('desktop')) {
 		const COOKIE_EXPIRE_DAYS = 30;
 		let cookieExpireSeconds;
 		
@@ -41,7 +41,7 @@ export const hintForMobileFunc = () => {
 				hintMessage.classList.remove('show'), 500);
 		}
 
-		setTimeout(hintAppearAnimation, 1000);
+		setTimeout(hintAppearAnimation, 2000);
 
 		cookieExpireSeconds = COOKIE_EXPIRE_DAYS * 60 * 60 * 24;
 		
