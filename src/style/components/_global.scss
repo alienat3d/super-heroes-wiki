@@ -1,8 +1,13 @@
+*, *::before, *::after {
+	box-sizing: border-box
+}
+
 body {
 	@include font-reg;
   background-color: #0e1538;
   color: $color-lightblue;
 }
+
 /* Sticky footer */
 html,
 body {

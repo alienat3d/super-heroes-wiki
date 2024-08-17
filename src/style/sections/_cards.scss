@@ -45,9 +45,13 @@ h1 {
 }
 .container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 5px;
   max-width: 1630px;
-  min-width: 320px;
+  // min-width: 320px;
+
+	@media (min-width: 640px) {
+		padding: 0 15px;
+	}
 }
 .content__title {
   margin: 4% 0 7%;
@@ -62,7 +66,7 @@ h1 {
 }
 .cards__card {
   position: relative;
-  width: 300px;
+  width: 250px;
   height: 522px;
   font-size: 18px;
   line-height: 125%;
@@ -73,13 +77,13 @@ h1 {
     z-index: -1;
     content: '';
     position: absolute;
-    inset: -3px;
+    inset: -1px;
   }
   &::before {
-    box-shadow: 0 0 0 20px #070c23;
+    box-shadow: 0 0 0 10px #070c23;
   }
   &::after {
-    filter: blur(20px);
+    filter: blur(10px);
   }
   &.male::before,
   &.male::after {
@@ -118,6 +122,21 @@ h1 {
   &.female:hover::before,
   &.female:hover::after {
     animation-name: color-corners-1;
+  }
+
+  @media (min-width: 640px) {
+    width: 300px;
+
+    &::before,
+    &::after {
+      inset: -3px;
+    }
+    &::before {
+      box-shadow: 0 0 0 20px #070c23;
+    }
+    &::after {
+      filter: blur(20px);
+    }
   }
 }
 .cards__card-title {
@@ -168,7 +187,7 @@ h1 {
     &::before {
       width: 25px;
       height: 25px;
-			left: 21px;
+      left: 21px;
       background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MDAiIGhlaWdodD0iODAwIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwY2NmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIiBkYXRhLW5hbWU9Ii0tQ2lyY2xlIi8+PHBhdGggZD0iTTEyIDEydjRNMTIgOGgwIi8+PC9nPjwvc3ZnPg==');
     }
     &::after {
@@ -272,7 +291,7 @@ h1 {
   padding-left: 24px;
 
   &::before {
-		@include icon;
+    @include icon;
     top: 0;
     left: 0;
     width: 21px;
@@ -289,7 +308,7 @@ h1 {
   padding-left: 24px;
 
   &::before {
-		@include icon;
+    @include icon;
     top: 1px;
     left: 0;
     width: 19px;
@@ -302,7 +321,7 @@ h1 {
   padding-left: 19px;
 
   &::before {
-		@include icon;
+    @include icon;
     top: 3px;
     left: 0;
     width: 15px;
@@ -318,7 +337,7 @@ h1 {
   padding-left: 19px;
 
   &::before {
-		@include icon;
+    @include icon;
     top: 3px;
     left: 0;
     width: 15px;
@@ -338,7 +357,7 @@ h1 {
   position: relative;
   display: inline-block;
   &::before {
-		@include icon;
+    @include icon;
     top: 3px;
     left: -23px;
     width: 15px;
