@@ -305,6 +305,7 @@ h1 {
 .cards__card-species {
   position: relative;
   padding-left: 24px;
+	text-transform: capitalize;
 
   &::before {
     @include icon;
@@ -318,6 +319,7 @@ h1 {
 .cards__card-citizenship {
   position: relative;
   padding-left: 19px;
+	text-transform: capitalize;
 
   &::before {
     @include icon;
