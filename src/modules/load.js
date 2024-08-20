@@ -1,7 +1,16 @@
-import { getDataFunc } from './get-data.js';
-import { renderFunc } from './render.js';
+import { getDataFunc } from './get-data';
+import { renderFunc } from './render';
 
-export const loadFunc = () => {
+const loadFunc = () => {
 	getDataFunc()
 		.then((data) => renderFunc(data));
 }
+const loadWithFilterFunc = (filter) => {
+	getDataFunc()
+		.then(data => renderFunc(data, filter));
+}
+
+export { 
+	loadFunc, 
+	loadWithFilterFunc 
+};

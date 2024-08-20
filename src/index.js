@@ -10,8 +10,10 @@ import { hintForMobileFunc } from "./modules/hint-for-mobile";
 import { showInfoFunc } from "./modules/show-info";
 import { loadFunc } from "./modules/load";
 import { filterFunc } from "./modules/filter";
+import { testFunc } from "./modules/test";
 
 hintForMobileFunc();
 showInfoFunc();
 loadFunc();
 filterFunc();
+testFunc();
