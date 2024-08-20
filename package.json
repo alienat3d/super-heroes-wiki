@@ -33,6 +33,7 @@
   "dependencies": {
     "bootstrap": "4.6",
     "current-device": "^0.10.2",
+    "nice-select2": "^2.2.0",
     "simple-notify": "^0.5.5"
   }
 }

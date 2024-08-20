@@ -1,7 +1,7 @@
 export const renderFunc = (cards) => {
 	const cardsContainer = document.querySelector('.cards');
 
-	cards.forEach((card, index) => {
+	cards.forEach(card => {
 		cardsContainer.insertAdjacentHTML('beforeend', `
 <div class="cards__card ${card.gender.toLowerCase()}">
 	<h2 class="cards__card-title">${card.name}</h2>

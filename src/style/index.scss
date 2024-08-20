@@ -1,5 +1,8 @@
-// === IMPORT THE COMPONENTS ===
+// === IMPORT THE LIBRARIES ===
 @import 'lib/normalize.css';
+@import 'lib/nice-select2.css';
+
+// === IMPORT THE COMPONENTS ===
 @import 'components/variables';
 @import 'components/typography';
 @import 'components/mixins';
@@ -7,5 +10,6 @@
 @import 'components/animations';
 
 // === IMPORT THE SECTIONS ===
+@import 'sections/filters';
 @import 'sections/cards';
 @import 'sections/footer';
