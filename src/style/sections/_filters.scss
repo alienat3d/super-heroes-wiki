@@ -3,3 +3,14 @@
 	display: flex;
 	justify-content: center;
 }
+.filters__movies-select {
+	min-width: 275px;
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+}
+.filters__reset-btn {
+	margin-right: 275px;
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 18px;
+}

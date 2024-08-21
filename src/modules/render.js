@@ -55,20 +55,12 @@ export const renderFunc = (cards, filter) => {
 
 	cards.forEach(card => {
 		if (card.movies) movies = card.movies;
-		console.log(filter);
 
 		if (filter === undefined) {
 			renderCard(card);
 		} else {
 			movies.forEach(movieTitle => {
-				if (movieTitle === filter) {
-					renderCard(card);
-					console.log(movieTitle);
-				} else {
-					return;
-				}
-
-				// if (movieTitle === filter) renderCard(card);
+				if (movieTitle === filter) renderCard(card);
 			});
 		}
 
