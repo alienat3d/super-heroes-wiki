@@ -1,5 +1,5 @@
 .filters {
-	position: relative;
+  position: relative;
   margin-bottom: 58px;
   display: flex;
   flex-wrap: wrap;
@@ -21,13 +21,16 @@
   min-width: 308px;
   font-size: 18px;
 
-	&.open {
-		border-radius: 5px 5px 0 0;
-	}
+  &.open {
+    border-radius: 5px 5px 0 0;
+
+		@media (min-width: 576px) {
+			border-radius: 5px 0 0 0;
+		}
+  }
 
   @media (min-width: 576px) {
     margin: 0;
-    margin-left: auto;
     border-right: 0;
     border-radius: 5px 0 0 5px;
     min-width: 337px;
@@ -49,9 +52,9 @@
   background-color: rgba($color-lightblue, 0.1);
 }
 .nice-select-search-box .nice-select-search {
-	font-size: 18px;
-	font-weight: 500;
-	color: $color-blue;
+  font-size: 18px;
+  font-weight: 500;
+  color: $color-blue;
 }
 .nice-select.open .nice-select-dropdown {
   margin-top: 2px;
@@ -61,33 +64,41 @@
   width: 308px;
 
   @media (min-width: 576px) {
-    width: 431px;
+    width: 440px;
+  }
+	@media (min-width: 1280px) {
+    width: 439px;
   }
 }
 .filters__reset-btn {
   cursor: pointer;
   order: -1;
-	position: absolute;
-	left: 50%;
-	bottom: 48px;
-	translate: -50%;
-	// margin: 0 auto 10px;
+  position: absolute;
+  left: 50%;
+  bottom: 48px;
+  translate: -50%;
+  // margin: 0 auto 10px;
   border-radius: 5px;
   padding: 7px 15px 6px;
   font-weight: 500;
   font-size: 18px;
   min-height: 38px;
-	transition: all .25s ease;
+  transition: all 0.25s ease;
 
-	&.disabled {
-		cursor: default;
-		border-color: rgba($color-lightblue, 0.2);
-		color: rgba($color-lightblue, 0.2);
-	}
+  &.disabled {
+    cursor: default;
+    border-color: rgba($color-lightblue, 0.2);
+    color: rgba($color-lightblue, 0.2);
+
+    @media (min-width: 576px) {
+      border-color: $color-lightblue;
+    }
+  }
 
   @media (min-width: 576px) {
+    position: static;
+		translate: initial;
     order: initial;
-    margin-right: 337px;
     border-radius: 0 5px 5px 0;
     border-left: 0;
     padding-right: 18px;

@@ -9,7 +9,7 @@ export const filterFunc = () => {
 		searchable: true
 	}
 	
-	// Styling selects with Nice Select 2 lib
+	// Styling select with Nice Select 2 lib
 	NiceSelect.bind(selectMovies, options);
 
 	filters.addEventListener('click', (evt) => {
