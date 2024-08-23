@@ -1,144 +1,165 @@
 [
   {
-    "name": "Ancient One",
-    "species": "human",
+    "name": "Старейшина",
+    "species": "человек",
+		"citizenship": "непальское",
     "gender": "Female",
     "birthDay": "1316",
     "deathDay": "2017",
     "status": "deceased",
-    "actors": "Tilda Swinton",
+    "actors": "Тильда Суинтон",
     "photo": "heroes-pics/ancient-one.webp",
     "movies": [
-      "Doctor Strange",
-      "Avengers: Endgame"
+      "Доктор Стрэндж",
+      "Мстители: Финал"
     ]
   },
   {
-    "name": "Ant-Man",
-    "realName": "Scott Edward Harris Lang",
-    "species": "human",
-    "citizenship": "American",
+    "name": "Человек-муравей",
+    "realName": "Скотт Эдвард Хэррис Лэнг",
+    "species": "человек",
+    "citizenship": "американское",
     "gender": "male",
     "status": "alive",
-    "actors": "Paul Rudd",
+    "actors": "Пол Радд",
     "photo": "heroes-pics/ant-man.webp",
     "movies": [
-      "Ant-Man",
-      "Captain America: Civil War",
-      "Ant-Man and the Wasp",
-      "Avengers: Endgame"
+      "Человек-муравей",
+      "Человек-муравей и Оса",
+			"Человек-муравей и Оса: Квантомания",
+      "Первый мститель: Противостояние",
+      "Мстители: Финал"
     ]
   },
   {
-    "name": "Black Panther",
-    "realName": "T'Challa",
-    "species": "human",
-    "citizenship": "Wakandan",
+    "name": "Чёрная Пантера",
+    "realName": "Тчалла",
+    "species": "человек",
+    "citizenship": "ваканданское",
     "gender": "male",
-    "status": "alive",
-    "actors": "Chadwick Boseman",
+		"birthDay": "1980",
+		"deathDay": "2024",
+    "status": "deceased",
+    "actors": "Чедвик Боузман",
     "photo": "heroes-pics/black-panther.webp",
     "movies": [
-      "Captain America: Civil War",
-      "Black Panther",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Первый мститель: Противостояние",
+      "Чёрная Пантера",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
     "name": "Black Widow",
-    "realName": "Natalia Alianovna Romanoff",
-    "species": "human",
-    "citizenship": "Soviet",
+    "realName": "Наталья Алиановна Романова",
+    "species": "человек",
+    "citizenship": "советское",
     "gender": "female",
     "birthDay": "1984",
     "deathDay": "2014",
-    "status": "alive",
-    "actors": "Scarlett Johansson",
+    "status": "deceased",
+    "actors": "Скарлетт Йоханссон",
     "photo": "heroes-pics/black-widow.webp",
     "movies": [
-      "Iron Man 2",
-      "The Avengers",
-      "Captain America: The Winter Soldier",
-      "Avengers: Age of Ultron",
-      "Captain America: Civil War",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+			"Чёрная Вдова",
+      "Железный человек 2",
+      "Мстители",
+      "Первый мститель: Другая война",
+      "Мстители: Эра Альтрона",
+      "Первый мститель: Противостояние",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
-    "name": "Captain America",
+    "name": "Капитан Америка",
     "realName": "Steven Grant Rogers",
-    "species": "human",
-    "citizenship": "British",
+    "species": "человек",
+    "citizenship": "американское",
     "gender": "male",
     "birthDay": "1918",
     "status": "alive",
-    "actors": "Chris Evans",
+    "actors": "Крис Эванс",
     "photo": "heroes-pics/captain-america.webp",
     "movies": [
-      "Captain America: The First Avenger",
-      "The Avengers",
-      "Captain America: The Winter Soldier",
-      "Avengers: Age of Ultron",
-      "Captain America: Civil War",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Первый мститель",
+      "Мстители",
+      "Первый мститель: Другая война",
+      "Мстители: Эра Альтрона",
+      "Первый мститель: Противостояние",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
-    "name": "Captain Marvel",
-    "realName": "Carol Danvers",
-    "species": "human",
-    "citizenship": "American",
+    "name": "Капитан Марвел",
+    "realName": "Кэрол Сьюзен Джейн Дэнверс",
+    "species": ["крианец", "человек"],
+    "citizenship": ["крианское", "американское"],
     "gender": "female",
     "status": "alive",
-    "actors": "Brie Larson",
+    "actors": "Бри Ларсон",
     "photo": "heroes-pics/captain-marvel.webp",
     "movies": [
-      "Captain Marvel",
-      "Avengers: Endgame"
+      "Капитан Марвел",
+			"Капитан Марвел 2",
+      "Мстители: Финал"
     ]
   },
   {
-    "name": "Daredevil",
-    "realName": "Matthew Michael Murdock",
-    "species": "human",
+    "name": "Сорвиголова",
+    "realName": "Мэттью Майкл Мёрдок",
+    "species": "человек",
     "citizenship": "American",
     "gender": "male",
+		"birthDay": "1980",
     "status": "alive",
-    "actors": "Charlie Cox",
-    "photo": "heroes-pics/daredevil.webp"
+    "actors": "Чарли Кокс",
+    "photo": "heroes-pics/daredevil.webp",
+		"movies": [
+      "Человек-паук: Нет пути домой"
+    ]
   },
   {
-    "name": "Doctor Strange",
-    "realName": "Stephen Vincent Strange",
-    "species": "human",
+    "name": "Доктор Стрэндж",
+    "realName": "Стивен Винсент Стрэндж",
+    "species": "человек",
     "citizenship": "American",
     "gender": "male",
     "status": "alive",
-    "actors": "Benedict Cumberbatch",
+    "actors": "Бенедикт Камбербэтч",
     "photo": "heroes-pics/doctor-strange.webp",
     "movies": [
-      "Doctor Strange",
-      "Thor: Ragnarok",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Доктор Стрэндж",
+			"Доктор Стрэндж: В мультивселенной безумия",
+      "Тор: Рагнарёк",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал",
+			"Человек-паук: Нет пути домой"
     ]
   },
   {
     "name": "Drax the Destroyer",
     "realName": "Drax",
-    "species": "human",
+    "species": "Килосианин",
+		"citizenship": "Килосианин",
     "gender": "male",
     "status": "alive",
-    "actors": "Dave Bautista",
-    "photo": "heroes-pics/drax.webp"
+    "actors": "Дейв Батиста",
+    "photo": "heroes-pics/drax.webp",
+		"movies": [
+			"Стражи Галактики",
+			"Стражи Галактики часть 2",
+			"Мстители: Война бесконечности",
+			"Мстители: Финал",
+			"Тор: Любовь и гром",
+			"Стражи Галактики часть 3"
+		]
   },
   {
     "name": "Dum Dum Dugan",
     "realName": "Timothy Aloysius Cadwallader Dugan",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "male",
     "birthDay": "1912",
@@ -146,21 +167,21 @@
     "actors": "Neal McDonough",
     "photo": "heroes-pics/dum-dum-dugan.webp",
     "movies": [
-      "Captain America: The First Avenger",
-      "The Avengers"
+      "Первый мститель",
+      "Мстители"
     ]
   },
   {
     "name": "Edwin Jarvis",
     "realName": "Edwin Jarvis",
-    "species": "human",
+    "species": "человек",
     "citizenship": "British",
     "gender": "male",
     "status": "deceased",
     "actors": "James D'Arcy",
     "photo": "heroes-pics/edwin-jarvis.webp",
     "movies": [
-      "Avengers: Endgame"
+      "Мстители: Финал"
     ]
   },
   {
@@ -173,13 +194,13 @@
     "actors": "Kurt Russell",
     "photo": "heroes-pics/ego.webp",
     "movies": [
-      "Guardians of the Galaxy Vol. 2"
+      "Стражи Галактики часть 2"
     ]
   },
   {
     "name": "Executioner",
     "realName": "Skurge",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "male",
     "deathDay": "2017",
@@ -187,25 +208,25 @@
     "actors": "Karl Urban",
     "photo": "heroes-pics/executioner.webp",
     "movies": [
-      "Thor: Ragnarok"
+      "Тор: Рагнарёк"
     ]
   },
   {
     "name": "Falcon",
     "realName": "Samuel Thomas Wilson",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "male",
     "status": "alive",
     "actors": "Anthony Mackie",
     "photo": "heroes-pics/falcon.webp",
     "movies": [
-      "Captain America: The Winter Soldier",
-      "Avengers: Age of Ultron",
-      "Ant-Man",
-      "Captain America: Civil War",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Человек-муравей",
+			"Мстители: Эра Альтрона",
+      "Первый мститель: Другая война",
+      "Первый мститель: Противостояние",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
@@ -217,10 +238,10 @@
     "actors": "Zoe Saldana",
     "photo": "heroes-pics/gamora.webp",
     "movies": [
-      "Guardians of the Galaxy",
-      "Guardians of the Galaxy Vol. 2",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Стражи Галактики",
+      "Стражи Галактики часть 2",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
@@ -233,48 +254,48 @@
     "actors": "Vin Diesel",
     "photo": "heroes-pics/groot.webp",
     "movies": [
-      "Guardians of the Galaxy",
-      "Guardians of the Galaxy Vol. 2",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Стражи Галактики",
+      "Стражи Галактики часть 2",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
     "name": "Hank Pym",
     "realName": "Henry Jonathan Pym",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "male",
     "status": "alive",
     "actors": "Michael Douglas",
     "photo": "heroes-pics/hank-pym.webp",
     "movies": [
-      "Ant-Man",
-      "Ant-Man and the Wasp",
-      "Avengers: Endgame"
+      "Человек-муравей",
+      "Человек-муравей и Оса",
+      "Мстители: Финал"
     ]
   },
   {
     "name": "Hawkeye",
     "realName": "Clinton Francis Barton",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "male",
     "status": "alive",
     "actors": "Jeremy Renner",
     "photo": "heroes-pics/hawkeye.webp",
     "movies": [
-      "Thor",
-      "The Avengers",
-      "Avengers: Age of Ultron",
-      "Captain America: Civil War",
-      "Avengers: Endgame"
+      "Тор",
+      "Мстители",
+      "Первый мститель: Противостояние",
+      "Мстители: Эра Альтрона",
+      "Мстители: Финал"
     ]
   },
   {
     "name": "Heimdall",
     "realName": "Heimdall",
-    "species": "human",
+    "species": "человек",
     "citizenship": "Asgardian",
     "gender": "male",
     "deathDay": "2018",
@@ -282,10 +303,10 @@
     "actors": "Idris Elba",
     "photo": "heroes-pics/heimdall.webp",
     "movies": [
-      "Thor",
-      "Thor: The Dark World",
-      "Thor: Ragnarok",
-      "Avengers: Infinity War"
+      "Тор",
+      "Тор 2: Царство тьмы",
+      "Тор: Рагнарёк",
+      "Мстители: Война бесконечности"
     ]
   },
   {
@@ -299,26 +320,26 @@
     "actors": "Cate Blanchett",
     "photo": "heroes-pics/hela.webp",
     "movies": [
-      "Thor: Ragnarok"
+      "Тор: Рагнарёк"
     ]
   },
   {
     "name": "Helmut Zemo",
     "realName": "Helmut Zemo",
-    "species": "human",
+    "species": "человек",
     "citizenship": "Sokovian",
     "gender": "male",
     "status": "alive",
     "actors": "Daniel Brühl",
     "photo": "heroes-pics/helmut-zemo.webp",
     "movies": [
-      "Captain America: Civil War"
+      "Первый мститель: Противостояние"
     ]
   },
   {
     "name": "Hulk",
     "realName": "Robert Bruce Banner",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "male",
     "birthDay": "1969",
@@ -326,18 +347,18 @@
     "actors": "Edward Norton",
     "photo": "heroes-pics/hulk.webp",
     "movies": [
-      "The Incredible Hulk",
-      "The Avengers",
-      "Avengers: Age of Ultron",
-      "Thor: Ragnarok",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Невероятный Халк",
+      "Тор: Рагнарёк",
+      "Мстители",
+      "Мстители: Эра Альтрона",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
-    "name": "Iron Man",
+    "name": "Железный человек",
     "realName": "Tony Stark",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "male",
     "birthDay": "1970",
@@ -346,29 +367,29 @@
     "actors": "Robert Downey, Jr.",
     "photo": "heroes-pics/iron-man.webp",
     "movies": [
-      "Iron Man",
-      "Iron Man 2",
-      "The Avengers",
-      "Iron Man 3",
-      "Captain America: Civil War",
-      "Spider-Man: Homecoming",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Железный человек",
+      "Железный человек 2",
+      "Железный человек 3",
+      "Мстители",
+      "Первый мститель: Противостояние",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал",
+      "Человек-паук: Возвращение домой"
     ]
   },
   {
     "name": "Jane Foster",
     "realName": "Jane Foster",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "female",
     "status": "alive",
     "actors": "Natalie Portman",
     "photo": "heroes-pics/jane-foster.webp",
     "movies": [
-      "Thor",
-      "Thor: The Dark World",
-      "Avengers: Endgame"
+      "Тор",
+      "Тор 2: Царство тьмы",
+      "Мстители: Финал"
     ]
   },
   {
@@ -381,8 +402,8 @@
     "actors": "Taika Waititi",
     "photo": "heroes-pics/korg.webp",
     "movies": [
-      "Thor: Ragnarok",
-      "Avengers: Endgame"
+      "Тор: Рагнарёк",
+      "Мстители: Финал"
     ]
   },
   {
@@ -397,27 +418,27 @@
     "actors": "Tom Hiddleston",
     "photo": "heroes-pics/loki.webp",
     "movies": [
-      "Thor",
-      "The Avengers",
-      "Thor: The Dark World",
-      "Thor: Ragnarok",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Тор",
+      "Тор 2: Царство тьмы",
+      "Тор: Рагнарёк",
+      "Мстители",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
     "name": "M'Baku",
     "realName": "M'Baku",
-    "species": "human",
+    "species": "человек",
     "citizenship": "Wakandan",
     "gender": "male",
     "status": "alive",
     "actors": "Winston Duke",
     "photo": "heroes-pics/m-baku.webp",
     "movies": [
-      "Black Panther",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Чёрная Пантера",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
@@ -428,15 +449,15 @@
     "actors": "Pom Klementieff",
     "photo": "heroes-pics/mantis.webp",
     "movies": [
-      "Guardians of the Galaxy Vol. 2",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Стражи Галактики часть 2",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
     "name": "Mysterio",
     "realName": "Quentin Beck",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "male",
     "deathDay": "2024",
@@ -444,7 +465,7 @@
     "actors": "Jake Gyllenhaal",
     "photo": "heroes-pics/mysterio.webp",
     "movies": [
-      "Spider-Man: Far From Home"
+      "Человек-паук: Вдали от дома"
     ]
   },
   {
@@ -458,15 +479,15 @@
     "actors": "Anthony Hopkins",
     "photo": "heroes-pics/odin.webp",
     "movies": [
-      "Thor",
-      "Thor: The Dark World",
-      "Thor: Ragnarok"
+      "Тор",
+      "Тор 2: Царство тьмы",
+      "Тор: Рагнарёк"
     ]
   },
   {
     "name": "Peggy Carter",
     "realName": "Margaret Elizabeth Carter",
-    "species": "human",
+    "species": "человек",
     "citizenship": "British",
     "gender": "female",
     "birthDay": "1921",
@@ -475,34 +496,34 @@
     "actors": "Hayley Atwell",
     "photo": "heroes-pics/peggy-carter.webp",
     "movies": [
-      "Captain America: The First Avenger",
-      "Captain America: The Winter Soldier",
-      "Avengers: Endgame"
+      "Первый мститель",
+      "Первый мститель: Другая война",
+      "Мстители: Финал"
     ]
   },
   {
     "name": "Pepper Potts",
     "realName": "Virginia Potts",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "female",
     "status": "alive",
     "actors": "Gwyneth Paltrow",
     "photo": "heroes-pics/pepper-potts.webp",
     "movies": [
-      "Iron Man",
-      "Iron Man 2",
-      "The Avengers",
-      "Iron Man 3",
-      "Spider-Man: Homecoming",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Железный человек",
+      "Железный человек 2",
+      "Мстители",
+      "Железный человек 3",
+      "Человек-паук: Возвращение домой",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
     "name": "Phil Coulson",
     "realName": "Phillip J. Coulson",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "male",
     "birthDay": "1964",
@@ -511,70 +532,73 @@
     "actors": "Clark Gregg",
     "photo": "heroes-pics/phil-coulson.webp",
     "movies": [
-      "Iron Man",
-      "Iron Man 2",
-      "Thor",
-      "The Avengers",
-      "Captain Marvel"
+      "Железный человек",
+      "Железный человек 2",
+      "Тор",
+      "Мстители",
+      "Капитан Марвел"
     ]
   },
   {
     "name": "Quicksilver",
     "realName": "Pietro Maximoff",
-    "species": "human",
+    "species": "человек",
     "citizenship": "Sokovian",
     "gender": "male",
     "status": "deceased",
     "actors": "Aaron Taylor-Johnson",
     "photo": "heroes-pics/quicksilver.webp",
     "movies": [
-      "Avengers: Age of Ultron"
+      "Мстители: Эра Альтрона"
     ]
   },
   {
     "name": "Red Skull",
     "realName": "Johann Schmidt",
-    "species": "human",
+    "species": "человек",
     "citizenship": "Nazi German",
     "gender": "male",
     "status": "alive",
     "actors": "Hugo Weaving",
     "photo": "heroes-pics/red-skull.webp",
     "movies": [
-      "Captain America: The First Avenger",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Первый мститель",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
-    "name": "Scarlet Witch",
-    "realName": "Wanda Maximoff",
-    "species": "human",
+    "name": "Алая ведьма",
+    "realName": "Ванда Максимофф",
+    "species": "человек",
     "citizenship": "sokovian",
     "gender": "female",
-    "status": "alive",
+		"birthDay": "1989",
+    "deathDay": "2024",
+    "status": "deceased",
     "actors": "Elizabeth Olsen",
     "photo": "heroes-pics/scarlet-witch.webp",
     "movies": [
-      "Avengers: Age of Ultron",
-      "Captain America: Civil War",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Мстители: Эра Альтрона",
+      "Первый мститель: Противостояние",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал",
+			"Доктор Стрэндж: В мультивселенной безумия"
     ]
   },
   {
     "name": "Shuri",
     "realName": "Shuri",
-    "species": "human",
+    "species": "человек",
     "citizenship": "Wakandan",
     "gender": "female",
     "status": "alive",
     "actors": "Letitia Wright",
     "photo": "heroes-pics/shuri.webp",
     "movies": [
-      "Black Panther",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Чёрная Пантера",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
@@ -587,14 +611,14 @@
     "actors": "Jaimie Alexander",
     "photo": "heroes-pics/sif.webp",
     "movies": [
-      "Thor",
-      "Thor: The Dark World"
+      "Тор",
+      "Тор 2: Царство тьмы"
     ]
   },
   {
     "name": "Spider-Man",
     "realName": "Peter Benjamin Parker",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "male",
     "birthDay": "2001",
@@ -602,18 +626,18 @@
     "actors": "Tom Holland",
     "photo": "heroes-pics/spider-man.webp",
     "movies": [
-      "Iron Man 2",
-      "Captain America: Civil War",
-      "Spider-Man: Homecoming",
-      "Avengers: Infinity War",
-      "Avengers: Endgame",
-      "Spider-Man: Far From Home"
+      "Железный человек 2",
+      "Человек-паук: Возвращение домой",
+      "Человек-паук: Вдали от дома",
+      "Первый мститель: Противостояние",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
     "name": "Star-Lord",
     "realName": "Peter Jason Quill",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "male",
     "birthDay": "1980",
@@ -621,10 +645,10 @@
     "actors": "Chris Pratt",
     "photo": "heroes-pics/star-lord.webp",
     "movies": [
-      "Guardians of the Galaxy",
-      "Guardians of the Galaxy Vol. 2",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Стражи Галактики",
+      "Стражи Галактики часть 2",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
@@ -638,14 +662,14 @@
     "actors": "Josh Brolin",
     "photo": "heroes-pics/thanos.webp",
     "movies": [
-      "Guardians of the Galaxy",
-      "Guardians of the Galaxy Vol. 2",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Стражи Галактики",
+      "Стражи Галактики часть 2",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
-    "name": "Thor",
+    "name": "Тор",
     "realName": "Thor Odinson",
     "species": "Asgardian",
     "citizenship": "Asgardian",
@@ -655,13 +679,13 @@
     "actors": "Chris Hemsworth",
     "photo": "heroes-pics/thor.webp",
     "movies": [
-      "Thor",
-      "The Avengers",
-      "Thor: The Dark World",
-      "Avengers: Age of Ultron",
-      "Thor: Ragnarok",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Тор",
+      "Мстители",
+      "Тор 2: Царство тьмы",
+      "Мстители: Эра Альтрона",
+      "Тор: Рагнарёк",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
@@ -674,8 +698,8 @@
     "actors": "Tessa Thompson",
     "photo": "heroes-pics/valkyrie.webp",
     "movies": [
-      "Thor: Ragnarok",
-      "Avengers: Endgame"
+      "Тор: Рагнарёк",
+      "Мстители: Финал"
     ]
   },
   {
@@ -689,28 +713,28 @@
     "actors": "Paul Bettany",
     "photo": "heroes-pics/vision.webp",
     "movies": [
-      "Avengers: Age of Ultron",
-      "Captain America: Civil War",
-      "Avengers: Infinity War"
+      "Мстители: Эра Альтрона",
+      "Первый мститель: Противостояние",
+      "Мстители: Война бесконечности"
     ]
   },
   {
     "name": "Vulture",
     "realName": "Adrian Toomes",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "male",
     "status": "alive",
     "actors": "Michael Keaton",
     "photo": "heroes-pics/vulture.webp",
     "movies": [
-      "Spider-Man: Homecoming"
+      "Человек-паук: Возвращение домой"
     ]
   },
   {
     "name": "War Machine",
     "realName": "James Rupert Rhodes",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "male",
     "birthDay": "1968",
@@ -718,19 +742,19 @@
     "actors": "Don Cheadle",
     "photo": "heroes-pics/war-machine.webp",
     "movies": [
-      "Iron Man",
-      "Iron Man 2",
-      "Iron Man 3",
-      "Avengers: Age of Ultron",
-      "Captain America: Civil War",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Железный человек",
+      "Железный человек 2",
+      "Железный человек 3",
+      "Мстители: Эра Альтрона",
+      "Первый мститель: Противостояние",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
     "name": "Wasp",
     "realName": "Hope van Dyne",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "female",
     "birthDay": "1980",
@@ -738,15 +762,15 @@
     "actors": "Evangeline Lilly",
     "photo": "heroes-pics/wasp.webp",
     "movies": [
-      "Ant-Man",
-      "Ant-Man and the Wasp",
-      "Avengers: Endgame"
+      "Человек-муравей",
+      "Человек-муравей и Оса",
+      "Мстители: Финал"
     ]
   },
   {
     "name": "Winter Soldier",
     "realName": "James Buchanan Barnes",
-    "species": "human",
+    "species": "человек",
     "citizenship": "American",
     "gender": "male",
     "birthDay": "1917",
@@ -754,26 +778,26 @@
     "actors": "Sebastian Stan",
     "photo": "heroes-pics/winter-soldier.webp",
     "movies": [
-      "Captain America: The First Avenger",
-      "Captain America: The Winter Soldier",
-      "Captain America: Civil War",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Первый мститель",
+      "Первый мститель: Другая война",
+      "Первый мститель: Противостояние",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
     "name": "Wong",
     "realName": "Wong",
-    "species": "human",
+    "species": "человек",
     "citizenship": "Chinese",
     "gender": "male",
     "status": "alive",
     "actors": "Benedict Wong",
     "photo": "heroes-pics/wong.webp",
     "movies": [
-      "Doctor Strange",
-      "Avengers: Infinity War",
-      "Avengers: Endgame"
+      "Доктор Стрэндж",
+      "Мстители: Война бесконечности",
+      "Мстители: Финал"
     ]
   },
   {
@@ -786,8 +810,8 @@
     "actors": "Michael Rooker",
     "photo": "heroes-pics/yondu.webp",
     "movies": [
-      "Guardians of the Galaxy",
-      "Guardians of the Galaxy Vol. 2"
+      "Стражи Галактики",
+      "Стражи Галактики часть 2"
     ]
   }
 ]
